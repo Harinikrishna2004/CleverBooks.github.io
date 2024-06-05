@@ -45,7 +45,7 @@ header{
 }
 
 .header .logo img {
-    max-height: 100%;
+    height: auto;
     max-width: 100%;
     display: flex;
     cursor: pointer;
@@ -94,6 +94,7 @@ header{
     height: 16%;
     z-index: 1000;
     transition: tranform 0.3s ease-in-out;
+    flex-direction: column;
   }
   .review-container {
     position: relative;
@@ -793,3 +794,157 @@ header{
     cursor: pointer;
     
 }
+
+@media (max-width: 768px) {
+  .header .nav ul {
+      flex-direction: column;
+  }
+
+  .header .nav ul li {
+      margin: 0.5rem 0;
+  }
+
+  .tag1 {
+      font-size: 1.5rem;
+  }
+
+  .tag {
+      font-size: 1.2rem;
+  }
+
+  .Info,
+  .Info1 {
+      font-size: 1rem;
+  }
+
+  .login1 {
+    font-size: 120%;
+    width: 120%;
+  }
+  .pushbar {
+    width: 90%;
+    margin-left: -45%;
+    top: 50%;
+    height: auto;
+    transform: translateY(100%);
+}
+
+.pushbar-active {
+    transform: translateY(0);
+}
+
+.pushbar-toggle-row {
+    flex-direction: column;
+}
+
+.pushbar-option {
+    flex: 1 1 auto;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+.review-container {
+  padding: 15px;
+}
+
+.review {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.review_head {
+  font-size: 20px;
+}
+
+.navigation-buttons button {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+.answer-box {
+  flex-basis: calc(50% - 20px); /* Two columns with gap on smaller screens */
+}
+.footer1 {
+  flex-direction: column;
+}
+
+.foot1, .foot2 {
+  text-align: center;
+  width: 100%;
+  font-size: 16px; /* Adjust font size for smaller screens */
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+.foot1 {
+  font-size: 18px; /* Adjust font size for smaller screens */
+}
+
+}
+
+
+@media (max-width: 480px) {
+  .header .logo img {
+      width: 80%;
+  }
+
+  .get-started-button {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+  }
+
+  
+
+  .login1 {
+    font-size: 100%;
+    width: 100%;
+}
+.pushbar {
+  width: 100%;
+  right: 0;
+  top: 10%;
+  height: auto;
+  transform: translateY(100%);
+}
+
+.pushbar-active {
+  transform: translateY(0);
+}
+
+.pushbar-option {
+  padding: 15px;
+  font-size: 16px;
+}
+.review-container {
+  padding: 10px;
+}
+
+.review {
+  padding: 10px;
+}
+
+.review_head {
+  font-size: 18px;
+}
+
+.navigation-buttons button {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+.answer-box {
+  flex-basis: calc(100% - 20px); /* Single column with gap on smallest screens */
+}
+
+.footer_section {
+  padding: 20px;
+}
+
+.foot1 {
+  font-size: 16px; /* Adjust font size for smallest screens */
+}
+}
+
+
